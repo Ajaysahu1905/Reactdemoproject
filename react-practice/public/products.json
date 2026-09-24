@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "title": "Wireless Headphones",
+    "price": 49.99,
+    "description": "Comfortable over-ear wireless headphones with long battery life.",
+    "image": "https://placehold.co/300x300?text=Headphones"
+  },
+  {
+    "id": 2,
+    "title": "Running Shoes",
+    "price": 39.99,
+    "description": "Lightweight running shoes with breathable mesh design.",
+    "image": "https://placehold.co/300x300?text=Shoes"
+  },
+  {
+    "id": 3,
+    "title": "Smart Watch",
+    "price": 79.99,
+    "description": "Fitness tracking smart watch with heart rate monitor.",
+    "image": "https://placehold.co/300x300?text=Smart+Watch"
+  },
+  {
+    "id": 4,
+    "title": "Backpack",
+    "price": 29.99,
+    "description": "Durable backpack with laptop compartment and multiple pockets.",
+    "image": "https://placehold.co/300x300?text=Backpack"
+  },
+  {
+    "id": 5,
+    "title": "Coffee Mug",
+    "price": 9.99,
+    "description": "Ceramic coffee mug that keeps your drink warm for longer.",
+    "image": "https://placehold.co/300x300?text=Coffee+Mug"
+  },
+  {
+    "id": 6,
+    "title": "Sunglasses",
+    "price": 19.99,
+    "description": "UV protection sunglasses with a stylish modern frame.",
+    "image": "https://placehold.co/300x300?text=Sunglasses"
+  },
+  {
+    "id": 7,
+    "title": "Desk Lamp",
+    "price": 24.99,
+    "description": "Adjustable LED desk lamp with three brightness levels.",
+    "image": "https://placehold.co/300x300?text=Desk+Lamp"
+  },
+  {
+    "id": 8,
+    "title": "Bluetooth Speaker",
+    "price": 34.99,
+    "description": "Portable Bluetooth speaker with rich bass and 10-hour battery.",
+    "image": "https://placehold.co/300x300?text=Speaker"
+  }
+]

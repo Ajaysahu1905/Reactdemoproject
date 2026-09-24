@@ -1,0 +1,9 @@
+.error-boundary {
+  text-align: center;
+  padding: 80px 20px;
+  color: #1a1a1a;
+}
+
+.error-boundary h2 {
+  color: #b52d2d;
+}
