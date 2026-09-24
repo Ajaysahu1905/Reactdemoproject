@@ -1,6 +1,5 @@
-// Isolates the bare Module Federation specifier in its own real file so
-// tests can mock this file directly (a normal, resolvable module path)
-// instead of fighting Vite's import-analysis over a virtual remote import.
+// Loads the RecommendationsWidget exposed by the
+// smartcart-recommendations Module Federation remote.
 export function loadRecommendationsWidget() {
-  return import(/* @vite-ignore */ "recommendations/RecommendationsWidget");
+  return import("recommendations/RecommendationsWidget");
 }
