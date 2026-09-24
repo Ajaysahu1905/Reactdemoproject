@@ -23,7 +23,7 @@ export default defineConfig(({ mode }) => ({
           recommendations: {
             type: 'module',
             name: 'smartcart_recommendations',
-            entry: 'http://localhost:4173/remoteEntry.js',
+            entry: 'https://smartcart-recommendations.vercel.app/remoteEntry.js',
             entryGlobalName: 'smartcart_recommendations',
             shareScope: 'default',
           },
