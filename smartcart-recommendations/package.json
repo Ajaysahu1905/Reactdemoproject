@@ -11,11 +11,11 @@
     "preview:remote": "vite build && vite preview --port 4173"
   },
   "dependencies": {
-    "react": "^19.2.8",
-    "react-dom": "^19.2.8"
+    "react": "19.2.8",
+    "react-dom": "19.2.8"
   },
   "devDependencies": {
-    "@module-federation/vite": "^1.22.0",
+    "@module-federation/vite": "^1.22.1",
     "@types/react": "^19.2.18",
     "@types/react-dom": "^19.2.7",
     "@vitejs/plugin-react": "^6.1.1",
