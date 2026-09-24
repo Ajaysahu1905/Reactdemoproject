@@ -3,7 +3,7 @@ import axios from "axios";
 // One shared Axios instance instead of fetch() calls that hardcoded the
 // base URL in four files — callers now pass relative paths ("/products").
 export const api = axios.create({
-  baseURL: "http://localhost:3001",
+  baseURL: import.meta.env.VITE_API_URL || "http://localhost:3001",
 });
 
 // Attaches a bearer token when logged in. Honest caveat: json-server has

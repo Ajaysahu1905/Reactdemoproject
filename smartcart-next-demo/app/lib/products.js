@@ -1,8 +1,7 @@
-// Fetches from the same json-server instance the sibling "react-practice"
-// Vite app uses (npm run server -> json-server --watch db.json --port 3001),
-// so both apps read the exact same product data.
-const API_BASE = process.env.PRODUCTS_API_URL || "http://localhost:3001";
+import productsData from "../../db.json";
 
+// Converts the db.json product format into the format
+// used by the Next.js SmartCart application.
 function toProduct(raw) {
   return {
     id: String(raw.id),
@@ -14,22 +13,17 @@ function toProduct(raw) {
   };
 }
 
+// Returns all products.
 export async function getProducts() {
-  const res = await fetch(`${API_BASE}/products`, { cache: "no-store" });
-  if (!res.ok) {
-    throw new Error(`Failed to fetch products: ${res.status}`);
-  }
-  const raw = await res.json();
-  return raw.map(toProduct);
+  return productsData.products.map(toProduct);
 }
 
+// Returns a single product by id.
+// Returns null when the product does not exist.
 export async function getProductById(id) {
-  const res = await fetch(`${API_BASE}/products/${id}`, { cache: "no-store" });
-  if (res.status === 404) {
-    return null;
-  }
-  if (!res.ok) {
-    throw new Error(`Failed to fetch product ${id}: ${res.status}`);
-  }
-  return toProduct(await res.json());
+  const product = productsData.products.find(
+    (item) => String(item.id) === String(id)
+  );
+
+  return product ? toProduct(product) : null;
 }
