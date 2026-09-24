@@ -1,7 +1,23 @@
-// Simple Route Handler exposing the product list as JSON, sourced from the
-// same json-server (db.json) instance the sibling react-practice app uses.
 import { getProducts } from "../../lib/products";
 
+const corsHeaders = {
+  "Access-Control-Allow-Origin": "https://smartcart-react-app.vercel.app",
+  "Access-Control-Allow-Methods": "GET, OPTIONS",
+  "Access-Control-Allow-Headers": "Content-Type, Authorization",
+};
+
 export async function GET() {
-  return Response.json(await getProducts());
+  const products = await getProducts();
+
+  return Response.json(products, {
+    headers: corsHeaders,
+  });
 }
+
+export async function OPTIONS() {
+  return new Response(null, {
+    status: 204,
+    headers: corsHeaders,
+  });
+}
+``
